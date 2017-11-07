@@ -8,18 +8,15 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class WelcomeVC: UIViewController {
 
-    @IBOutlet weak var logo: UIImageView!
-    @IBOutlet weak var bgImg: UIImageView!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-
-    @IBAction func goBack(segue: UIStoryboardSegue) {
-        
+    
+    @IBAction func btnGetStartedPressed(_ sender: Any) {
+        performSegue(withIdentifier: "leagueVCSegue", sender: self)
     }
-
+    
 }
 
